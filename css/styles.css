@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #ffffff;
+}
+
+html, * {
+    font-family: 'Inter', sans-serif; 
+    font-size: 14px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links li {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a, .nav-button {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.nav-button {
+    background-color: #ffffff;
+    border-radius: 25px;
+    color: #000;
+    padding: 15px 30px;
+    border: 1px solid #000;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7.5rem;
+    background-color: #ffffff;
+}
+
+.hero-left, .hero-right {
+    flex: 1;
+    padding: 3rem;
+}
+
+.hero-left h1 {
+    margin: 0;
+    font-size: 30pt;
+}
+
+.hero-right p {
+    margin: 0.5rem 0;
+    font-size: 14px;
+}
+
+.hero-right a {
+    text-decoration: none;
+    border: none;
+    border-bottom: 2px solid rgb(0,105,255);
+    padding-bottom: 2px;
+    color: rgb(0,105,255);
+    font-weight: bolder;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-left, .hero-right {
+        padding: 1rem 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+    }
+
+    .nav-links li {
+        text-align: center;
+        padding: 1rem 0;
+        width: 100%;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
