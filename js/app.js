@@ -6,6 +6,14 @@ document.querySelector(".hamburger").addEventListener("click", () => {
 });
 
 /**
+ * send request
+ */
+function SendRequest() {
+  // onclick, change location to /pages/en-us/contact.html
+  window.location.href = "./pages/en-us/contact.html";
+}
+
+/**
  * partners slideshow
  */
 let slideIndex = 0;
