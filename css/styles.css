@@ -291,3 +291,131 @@ footer {
     display: flex;
   }
 }
+
+/* Contact Us code*/
+.contact-box {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.contact-right {
+  flex: 1;
+  padding: 40px 60px;
+  background-color: #246bfd;
+  color: #fff;
+}
+
+.contact-left {
+  flex: 1;
+  padding: 40px;
+  background: #246bfd;
+  color: #ffffff;
+}
+
+.input-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.input-row .input-group {
+  flex-basis: 45%;
+}
+
+input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+  padding-bottom: 5px;
+  background: #246bfd;
+}
+
+/* Change cursor color to white */
+.contact-right .input-row input {
+  color: #ffffff;
+  caret-color: #ffffff;
+}
+
+textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  outline: none;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-top: 10px;
+}
+
+label {
+  margin-bottom: 6px;
+  display: block;
+  color: #ffffff;
+}
+
+#send {
+  background: #ffffff;
+  width: 150px;
+  outline: none;
+  border: none;
+  color: black;
+  height: 40px;
+  border-radius: 30px;
+  margin-top: 0px;
+  box-shadow: 0px 5px 15px 0px #d1c9c94d;
+}
+
+.contact-left h3 {
+  font-weight: 600;
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
+.contact-left .input-row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.contact-left .input-row .input-group {
+  flex-basis: 100%;
+  margin-bottom: 20px;
+}
+
+.input-row .input-group-phone{
+  flex-basis: 100%;
+  margin-bottom: 20px;
+}
+
+.contact-left input,
+.contact-left textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+  padding-bottom: 5px;
+  background: #246bfd;
+  color: #ffffff;
+  caret-color: #ffffff;
+}
+
+.contact-left textarea {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.contact-left label {
+  margin-bottom: 6px;
+  display: block;
+  color: #ffffff;
+}
+
+.contact-left #send {
+  background: #ffffff;
+  width: 150px;
+  color: black;
+  height: 35px;
+  border-radius: 30px;
+  margin-top: 20px;
+  box-shadow: 0px 5px 15px 0px #d1c9c94d;
+}
