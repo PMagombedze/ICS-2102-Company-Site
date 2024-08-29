@@ -1,19 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="../../images/ico.ico" type="image/x-icon">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-            rel="stylesheet">
-        <link rel="stylesheet" href="../../css/styles.css">
-        <link rel="stylesheet" href="../../css/all.min.css">
-        <title>Carlano Computer Systems</title>
-    </head>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../../images/ico.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../../css/styles.css">
+  <link rel="stylesheet" href="../../css/all.min.css">
+  <title>Carlano Computer Systems</title>
+</head>
+
 <body>
-    
+  <!--navbar-->
+  <nav class="navbar">
+    <div class="logo">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(0, 105, 255)" class="bi bi-asterisk"
+        viewBox="0 0 16 16">
+        <path
+          d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1" />
+      </svg>&nbsp;Carlano
+    </div>
+    <ul class="nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="../en-us/services.html">Services</a></li>
+      <li><a href="../en-us/about.html">About</a></li>
+      <li><a href="../en-us/contact.html">Contact</a></li>
+      <li>
+        <button onclick="SendRequest();" class="nav-button">
+          Send request&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="currentColor"
+            class="bi bi-arrow-up-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z" />
+          </svg>
+        </button>
+      </li>
+    </ul>
+    <div class="hamburger">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+  </nav>
+  <div class="aboutUsTitle">
+
+    <h1>About us</h1>
+    <p> ICT solutions firms based in Zimbabwe must leverage
+      </br>their expertise and experience to deliver 
+      </br>comprehensive services to a diverse array
+      </br>of business needs across the region.
+    </p>
+  </div>
+
+  <!--Wraping Small Title and Table-->
+  <div class="about-us-container">
+    <div class="aboutUsSmallTitle">
+      <h2>Fully
+        </br>Connected
+      </h2>
+    </div>
+
+    <!--About Us Unique Features-->
+    <table>
+      <tr>
+        <td>
+          <h3>Strategy</h3>
+          <p>Create and send a survey as little as 30 seconds, Feedback is compiled
+          in easy to understand graphs for actionable insights.</p>
+        </td>
+
+        <td>
+          <h3>Management</h3>
+          <p>Create and send a survey as little as 30 seconds, Feedback is compiled
+          in easy to understand graphs for actionable insights.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h3>Financial</h3>
+          <p>Create and send a survey as little as 30 seconds, Feedback is compiled
+            in easy to understand graphs for actionable insights.</p>
+        </td>
+
+        <td>
+          <h3>Secure</h3>
+          <p>Create and send a survey as little as 30 seconds, Feedback is compiled
+          in easy to understand graphs for actionable insights.</p>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="./pages/en-us/about.html">About</a></li>
+          <li><a href="./pages/en-us/careers.html">Careers</a></li>
+          <li><a href="./pages/en-us/contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Products</h3>
+        <ul>
+          <li><a href="#">Talent Marketplace</a></li>
+          <li><a href="#">Managed Services</a></li>
+          <li><a href="#">Upskilling</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Resources</h3>
+        <ul>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Webinars</a></li>
+          <li><a href="#">Case Studies</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Legal</h3>
+        <ul>
+          <li><a href="./pages/en-us/privacy.html">Terms of Service</a></li>
+          <li><a href="./pages/en-us/privacy.html">Privacy Policy</a></li>
+          <li><a href="./pages/en-us/sitemap.html">Sitemap</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2024 Carlano Computer Systems. All rights reserved.
+    </div>
+  </footer>
+
 </body>
+
 </html>

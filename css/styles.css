@@ -166,8 +166,7 @@ img {
   padding: 1rem;
 }
 
-.competence-left h1,
-h2 {
+.competence-left h1,.competence-left h2 {
   font-size: 25pt;
   color: rgb(0, 105, 255);
   font-weight: bolder;
@@ -418,4 +417,70 @@ label {
   border-radius: 30px;
   margin-top: 20px;
   box-shadow: 0px 5px 15px 0px #d1c9c94d;
+}
+
+/*About Us Code*/
+
+.aboutUsTitle h1{
+  font-size: 15pt;
+  color: #246bfd;
+  font-weight: bolder;
+  padding: 40px 60px;
+  margin: 50px 40px;
+  margin-top: 50px;
+  margin-bottom: -70px;
+}
+
+.aboutUsTitle p{
+  font-size: 15pt;
+  font-weight: bolder;
+  padding-left: 60px;
+  font-size: 24pt;
+  margin: 50px 40px;
+}
+
+.aboutUsSmallTitle {
+  flex: 1;
+  margin-left: -20px;
+} 
+
+.aboutUsSmallTitle h2{
+  font-weight: bolder;
+  padding-left: 60px;
+  margin-left: 10px;
+}
+
+.about-us-container table{
+  width: 50%;
+  border-collapse: separate;
+  border-spacing: 50px 0px;
+  margin-top: 0px;
+  flex: 1;
+  margin-left: -50%;
+  margin-right: 10%;
+  padding-left: 0;
+  background: #ffffff;
+}
+
+.about-us-container {
+  display: flex;
+  align-items: flex-start;
+  padding: 50px;
+  padding-right: 0px;
+  background: #fff;
+}
+
+.about-us-container table td {
+  padding: 5px 10px;
+}
+
+.about-us-container p {
+  margin-bottom: 50px;
+  background-color: rgb(255, 255, 255);
+}
+
+.about-us-container h3{
+  border-top: #ddd solid 2px;
+  padding: 10px 0px;
+  padding-bottom: 0px;
 }
