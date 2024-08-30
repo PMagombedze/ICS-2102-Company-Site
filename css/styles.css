@@ -295,11 +295,12 @@ footer {
 .contact-box {
   display: flex;
   flex-direction: row-reverse;
+  margin: 50px 0px;
 }
 
 .contact-right {
   flex: 1;
-  padding: 40px 60px;
+  padding: 60px 40px 60px 20px;
   background-color: #246bfd;
   color: #fff;
 }
@@ -315,7 +316,12 @@ footer {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
+  margin-left: -70px;
+  margin-right: 70px; /* Add this line to move elements further left */
 }
+  .input-row .input-group {
+    flex-basis: 48%; /* Slightly reduce to prevent wrapping */
+  }
 
 .input-row .input-group {
   flex-basis: 45%;
@@ -349,6 +355,7 @@ label {
   margin-bottom: 6px;
   display: block;
   color: #ffffff;
+  background: #246bfd
 }
 
 #send {
@@ -360,6 +367,7 @@ label {
   height: 40px;
   border-radius: 30px;
   margin-top: 0px;
+  margin-left: -75px;
   box-shadow: 0px 5px 15px 0px #d1c9c94d;
 }
 
@@ -367,16 +375,16 @@ label {
   font-weight: 600;
   margin-bottom: 30px;
   font-size: 20px;
+  margin-left: 55px;
+}
+
+.contact-left p {
+  margin-left: 55px;
 }
 
 .contact-left .input-row {
   display: flex;
   flex-direction: column;
-  margin-bottom: 20px;
-}
-
-.contact-left .input-row .input-group {
-  flex-basis: 100%;
   margin-bottom: 20px;
 }
 
@@ -392,7 +400,6 @@ label {
   border-bottom: 1px solid #ccc;
   outline: none;
   padding-bottom: 5px;
-  background: #246bfd;
   color: #ffffff;
   caret-color: #ffffff;
 }
@@ -401,12 +408,6 @@ label {
   border: 1px solid #ccc;
   padding: 10px;
   margin-top: 10px;
-}
-
-.contact-left label {
-  margin-bottom: 6px;
-  display: block;
-  color: #ffffff;
 }
 
 .contact-left #send {
