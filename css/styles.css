@@ -329,7 +329,6 @@ footer {
 .userDetails table td {
   font-size: 10pt;
   font-weight: bolder;
-
 }
 .userDetails table {
   border-spacing: 40px;
@@ -344,13 +343,12 @@ footer {
   width: 94.3%;
 }
 
-
 .userDetails input {
   margin-top: 5%;
   padding: 10px 10px;
   border-radius: 10px;
   flex: 1;
-  border-color: grey;
+  border: 1px solid #ccc;
 }
 
 .contactUsPrivacyPolicy {
