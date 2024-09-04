@@ -303,9 +303,9 @@ footer {
 /* Contact Us code*/
 
 .contactUsImage {
-  scale: 12%;
+  scale: 11.6%;
   margin-left: 16%;
-  margin-top: -228%;
+  margin-top: -232.34%;
   margin-bottom: -170%;
   margin-right: -9%;
 }
@@ -361,6 +361,12 @@ footer {
   border: 1px solid #ccc;
 }
 
+.leftSide {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, 
+  rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+  
+
 .contactUsPrivacyPolicy input {
   margin-left: 9%;
   margin-top: 3%;
@@ -380,6 +386,7 @@ footer {
   border-radius: 5px;
   width: 38.4%;
   color: white;
+  margin-bottom: 50px;
 }
 
 .ripple {
