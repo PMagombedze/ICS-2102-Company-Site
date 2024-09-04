@@ -52,6 +52,32 @@ html,
   color: #000;
   padding: 15px 30px;
   border: 2px solid #000;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.3s ease;
+}
+
+.nav-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #18181b;
+  z-index: 1;
+  transform: scaleX(0);
+  transform-origin: top right;
+  transition: transform 0.3s ease;
+}
+
+.nav-button:hover::before {
+  transform: scaleX(1);
+}
+
+.nav-button span {
+  position: relative;
+  z-index: 2;
 }
 
 .hamburger {
@@ -152,6 +178,7 @@ img {
   display: flex;
   justify-content: space-between;
   padding: 7rem;
+  background-color: #f6f8fa;
 }
 
 .competence-container {
@@ -193,6 +220,10 @@ img {
   font-size: 20pt;
   color: rgb(0, 105, 255);
   font-weight: bolder;
+}
+
+.competence-box p {
+  line-height: 1.5;
 }
 
 .work-together {
