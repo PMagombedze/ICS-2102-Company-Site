@@ -81,20 +81,19 @@
   </div>
 
   <div class="contactUsPrivacyPolicy">
-    <input type="checkbox" id="consent-checkbox" />
-      <label for="privacyPolicy" id="consent-checkbox">You agree to our friendly
-      privacy policy.
-      </label>
+    <input type="checkbox" id="consent-checkbox" name="consent-checkbox">
+    <label for="consent-checkbox">You agree to our friendly 
+      <l><a href="../en-us/privacy.html">privacy policy.</a><l>
+    </label>
   </div>
 
   <div class="contactUsButton">
-    <button id="get-in-touch-button">Get in Touch</button>
+    <button id="get-in-touch-button" class="ripple" style="opacity: 0.5;">Get in Touch</button>
   </div>
   </div>
 
   <div class="contactUsImage">
-    <img src="../../images/research.jpg" alt="Woman Conducting Research" 
-        style="border-radius: 20px;"/>
+    <img src="../../images/research.jpg" alt="Woman Conducting Research" style="border-radius: 20px;" />
   </div>
 
   <div style="height: 1px;width: 100%;background-color: #eee;"></div>
@@ -142,3 +141,64 @@
 </body>
 
 </html>
+
+<script>
+  const button = document.getElementById("get-in-touch-button");
+  const check = document.getElementById("consent-checkbox");
+  
+  check.addEventListener("change", function () {
+
+    if(this.checked){
+    button.style.opacity = 1; //Make button normal style
+    }
+    
+    else {
+      button.style.opacity = 0.5 //Make button dull
+    button.disabled = true;
+    }
+  });
+
+</script>
+
+
+<!--Ripple-->
+<script>  
+  check.addEventListener("change", function () {
+    if(this.checked){
+      button.style.opacity = 1;
+      button.disabled = false;
+      button.classList.add('ripple');
+      addRippleEffect();
+    } else {
+      button.style.opacity = 0.5;
+      button.disabled = true;
+      button.classList.remove('ripple');
+      removeRippleEffect();
+    }
+  });
+
+  function addRippleEffect() {
+    button.addEventListener('click', createRipple);
+  }
+
+  function removeRippleEffect() {
+    button.removeEventListener('click', createRipple);
+  }
+
+  function createRipple(e) {
+    let rect = e.target.getBoundingClientRect();
+    let ripple = e.target.querySelector('.ripple');
+    if (!ripple) {
+      ripple = document.createElement('span');
+      ripple.className = 'ripple';
+      ripple.style.height = ripple.style.width = Math.max(rect.width, rect.height) + 'px';
+      e.target.appendChild(ripple);
+    }
+    ripple.classList.remove('show');
+    let top = e.clientY - rect.top - ripple.offsetHeight / 2;
+    let left = e.clientX - rect.left - ripple.offsetWidth / 2;
+    ripple.style.top = top + 'px';
+    ripple.style.left = left + 'px';
+    ripple.classList.add('show');
+  }
+</script>

@@ -29,25 +29,3 @@ function showSlides() {
   dots[slideIndex - 1].className += " active";
   setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
-
-/**
- * tick box enabling button
- */
-const checkbox = document.getElementById("consent-checkbox");
-const getInTouchButton = document.getElementById("get-in-touch-button");
-
-function updateButtonState() {
-  if (checkbox.checked) {
-    getInTouchButton.disabled = false;
-    getInTouchButton.classList.remove("dull");
-  } else {
-    getInTouchButton.disabled = true;
-    getInTouchButton.classList.add("dull");
-  }
-}
-
-// Initial state
-updateButtonState();
-
-// Add event listener to checkbox
-checkbox.addEventListener("change", updateButtonState);
