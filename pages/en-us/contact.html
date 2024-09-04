@@ -28,6 +28,7 @@
       <li><a href="/">Home</a></li>
       <li><a href="../en-us/services.html">Services</a></li>
       <li><a href="../en-us/about.html">About</a></li>
+      <li><a href="../en-us/blog.html">Blog</a></li>
       <li><a href="../en-us/contact.html">Contact</a></li>
       <li>
         <button onclick="SendRequest();" class="nav-button">
@@ -47,7 +48,7 @@
   </nav>
 
   <div class="leftSide">
-      
+
     <!--Titles, Text, Image, Inputs Fields and Buttons-->
     <div class="contactUsTitle">
       <h1>Get in Touch</h1>
@@ -83,20 +84,20 @@
 
     <div class="contactUsPrivacyPolicy">
       <input type="checkbox" id="consent-checkbox" name="consent-checkbox">
-      <label for="consent-checkbox">You agree to our friendly 
-      <a href="../en-us/privacy.html" style="color: grey;">privacy policy.</a>
+      <label for="consent-checkbox">You agree to our friendly
+        <a href="../en-us/privacy.html" style="color: grey;">privacy policy.</a>
       </label>
     </div>
 
     <div class="contactUsButton">
       <button id="get-in-touch-button" class="ripple" style="opacity: 0.5;">Get in Touch</button>
     </div>
-    </div>
+  </div>
   </div>
 
   <div class="contactUsImage">
-    <img src="../../images/research.jpg" alt="Woman Conducting Research" 
-    style="border-radius: 20px;" style="height: 200vh;"/>
+    <img src="../../images/research.jpg" alt="Woman Conducting Research" style="border-radius: 20px;"
+      style="height: 200vh;" />
   </div>
 
   <div style="height: 1px;width: 100%;background-color: #eee;"></div>
@@ -148,16 +149,16 @@
 <script>
   const button = document.getElementById("get-in-touch-button");
   const check = document.getElementById("consent-checkbox");
-  
+
   check.addEventListener("change", function () {
 
-    if(this.checked){
-    button.style.opacity = 1; //Make button normal style
+    if (this.checked) {
+      button.style.opacity = 1; //Make button normal style
     }
-    
+
     else {
       button.style.opacity = 0.5 //Make button dull
-    button.disabled = true;
+      button.disabled = true;
     }
   });
 
@@ -165,9 +166,9 @@
 
 
 <!--Ripple-->
-<script>  
+<script>
   check.addEventListener("change", function () {
-    if(this.checked){
+    if (this.checked) {
       button.style.opacity = 1;
       button.disabled = false;
       button.classList.add('ripple');
