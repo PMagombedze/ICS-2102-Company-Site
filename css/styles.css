@@ -295,10 +295,9 @@ footer {
 /* Contact Us code*/
 
 .contactUsImage {
-  scale: 15%;
-  padding: 0px 0px;
+  scale: 12%;
   margin-left: 16%;
-  margin-top: -211.7%;
+  margin-top: -217%;
   margin-bottom: -165%;
 }
 
@@ -345,7 +344,7 @@ footer {
 }
 
 .userDetails input {
-  margin-top: 5%;
+  margin-top: 9px;
   padding: 10px 10px;
   border-radius: 10px;
   flex: 1;
