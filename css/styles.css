@@ -152,7 +152,6 @@ img {
   display: flex;
   justify-content: space-between;
   padding: 7rem;
-  background-color: #f6f8fa;
 }
 
 .competence-container {
@@ -462,13 +461,6 @@ table h3 {
   color: #fff;
 }
 
-/* General Body Styling */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  margin: 0;
-  padding: 20px;
-}
 
 /* Blog Container */
 .blog-container {
