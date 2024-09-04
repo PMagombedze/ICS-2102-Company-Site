@@ -166,7 +166,8 @@ img {
   padding: 1rem;
 }
 
-.competence-left h1,.competence-left h2 {
+.competence-left h1,
+.competence-left h2 {
   font-size: 25pt;
   color: rgb(0, 105, 255);
   font-weight: bolder;
@@ -292,137 +293,79 @@ footer {
 }
 
 /* Contact Us code*/
-.contact-box {
-  display: flex;
-  flex-direction: row-reverse;
-  margin: 50px 0px;
+
+.contactUsImage {
+  scale: 50%;
+  padding: 0px 0px;
+  margin-left: 35%;
+  margin-top: -63%;
+  margin-bottom: -200px;
 }
 
-.contact-right {
+.contactUsTitle {
+  padding: 40px 60px;
+  margin: 50px 40px;
+  margin-top: 50px;
+  margin-bottom: -70px;
+}
+
+.contactUsTitle h1 {
+  font-size: 15pt;
+  color: #246bfd;
+  font-weight: bolder;
+}
+.contactUsTitle p {
+  font-size: 10pt;
+  font-weight: bolder;
+  color: grey;
+}
+
+.userDetails {
+  padding: 30px 60px;
+  margin: 0px 40px;
+  margin-bottom: -70px;
+}
+
+.userDetails table td {
+  font-size: 10pt;
+  font-weight: bolder;
+}
+.userDetails table {
+  border-spacing: 40px;
+  margin-left: -3.5%;
+}
+
+.userDetails tr:nth-child(2) td input {
+  width: 94.4%;
+}
+
+.userDetails tr:nth-child(3) td input {
+  width: 94.3%;
+}
+
+.userDetails input {
+  margin-top: 5%;
+  padding: 10px 10px;
+  border-radius: 10px;
   flex: 1;
-  padding: 60px 40px 60px 20px;
-  background-color: #246bfd;
-  color: #fff;
-}
-
-.contact-left {
-  flex: 1;
-  padding: 40px;
-  background: #246bfd;
-  color: #ffffff;
-}
-
-.input-row {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
-  margin-left: -70px;
-  margin-right: 70px; /* Add this line to move elements further left */
-}
-  .input-row .input-group {
-    flex-basis: 48%; /* Slightly reduce to prevent wrapping */
-  }
-
-.input-row .input-group {
-  flex-basis: 45%;
-}
-
-input {
-  width: 100%;
-  border: none;
-  border-bottom: 1px solid #ccc;
-  outline: none;
-  padding-bottom: 5px;
-  background: #246bfd;
-}
-
-/* Change cursor color to white */
-.contact-right .input-row input {
-  color: #ffffff;
-  caret-color: #ffffff;
-}
-
-textarea {
-  width: 100%;
   border: 1px solid #ccc;
-  outline: none;
-  padding: 10px;
-  box-sizing: border-box;
-  margin-top: 10px;
 }
 
-label {
-  margin-bottom: 6px;
-  display: block;
-  color: #ffffff;
-  background: #246bfd
+.contactUsPrivacyPolicy {
+  padding: 40px 60px;
+  margin: 0px 40px;
+  margin-bottom: -70px;
 }
 
-#send {
-  background: #ffffff;
-  width: 150px;
-  outline: none;
-  border: none;
-  color: black;
-  height: 40px;
-  border-radius: 30px;
-  margin-top: 0px;
-  margin-left: -75px;
-  box-shadow: 0px 5px 15px 0px #d1c9c94d;
-}
-
-.contact-left h3 {
-  font-weight: 600;
-  margin-bottom: 30px;
-  font-size: 20px;
-  margin-left: 55px;
-}
-
-.contact-left p {
-  margin-left: 55px;
-}
-
-.contact-left .input-row {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
-}
-
-.input-row .input-group-phone{
-  flex-basis: 100%;
-  margin-bottom: 20px;
-}
-
-.contact-left input,
-.contact-left textarea {
-  width: 100%;
-  border: none;
-  border-bottom: 1px solid #ccc;
-  outline: none;
-  padding-bottom: 5px;
-  color: #ffffff;
-  caret-color: #ffffff;
-}
-
-.contact-left textarea {
-  border: 1px solid #ccc;
-  padding: 10px;
-  margin-top: 10px;
-}
-
-.contact-left #send {
-  background: #ffffff;
-  width: 150px;
-  color: black;
-  height: 35px;
-  border-radius: 30px;
-  margin-top: 20px;
-  box-shadow: 0px 5px 15px 0px #d1c9c94d;
+.contactUsButton {
+  padding: 0px 60px;
+  padding-top: 40px;
+  margin: 0px 40px;
 }
 
 /*About Us Code*/
 
-.aboutUsTitle h1{
+.aboutUsTitle h1 {
   font-size: 15pt;
   color: #246bfd;
   font-weight: bolder;
@@ -432,7 +375,7 @@ label {
   margin-bottom: -70px;
 }
 
-.aboutUsTitle p{
+.aboutUsTitle p {
   font-size: 15pt;
   font-weight: bolder;
   padding-left: 60px;
@@ -440,7 +383,7 @@ label {
   margin: 50px 40px;
 }
 
-.aboutUsTitle p1{
+.aboutUsTitle p1 {
   color: grey;
   font-size: 24pt;
 }
@@ -448,9 +391,9 @@ label {
 .aboutUsSmallTitle {
   flex: 1;
   margin-left: -20px;
-} 
+}
 
-.aboutUsSmallTitle h2{
+.aboutUsSmallTitle h2 {
   font-weight: bolder;
   padding-left: 40px;
   margin-left: 10px;
@@ -460,7 +403,7 @@ label {
   color: #246bfd;
 }
 
-.about-us-container table{
+.about-us-container table {
   width: 50%;
   border-spacing: 90px 0px;
   margin-top: 0px;
@@ -471,7 +414,7 @@ label {
 .about-us-container {
   display: flex;
   align-items: flex-start;
-  padding: 50px ;
+  padding: 50px;
   padding-right: 0px;
   background: black;
   margin: 7% 7%;
@@ -487,16 +430,16 @@ label {
   color: grey;
 }
 
-.about-us-container h3{
+.about-us-container h3 {
   border-top: #246bfd solid 2px;
   padding: 40px 0px 0px;
   margin-top: 0;
 }
 
-table h3{
+table h3 {
   font-size: 14pt;
   font-weight: 800;
   color: #fff;
 }
 
-/* Blog styles*/
+/* Blog styles* ma styles aya*/
