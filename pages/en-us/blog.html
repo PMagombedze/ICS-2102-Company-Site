@@ -10,12 +10,36 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../../css/styles.css" />
-    <link rel="stylesheet" href="../../css/all.min.css" />
-    <title>Carlano Blog | Cybersecurity, Website Creation, and Server Setup Services</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/css/styles.css" />
+    <title>Carlano Computer Systems</title>
 </head>
 <body>
+       <!--navbar-->
+       <nav class="navbar">
+        <div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(0, 105, 255)"
+                class="bi bi-asterisk" viewBox="0 0 16 16">
+                <path
+                    d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1" />
+            </svg>&nbsp;Carlano</div>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="./pages/en-us/services.html">Services</a></li>
+            <li><a href="./pages/en-us/about.html">About</a></li>
+            <li><a href="./pages/en-us/contact.html">Contact</a></li>
+            <li><button onclick="SendRequest();" class="nav-button">Send request&nbsp;<svg
+                        xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="currentColor"
+                        class="bi bi-arrow-up-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z" />
+                    </svg></button></li>
+        </ul>
+        <div class="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </nav>
+
     <header>
         <div class="blog-container">
             <h1>Welcome to Carlano Blog</h1>
@@ -79,10 +103,54 @@
         </div>
     </main>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Carlano. All rights reserved.</p>
-        </div>
-    </footer>
+        <!--footer-->
+        <div style="height: 1px;width: 100%;background-color: #eee;"></div>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="./pages/en-us/about.html">About</a></li>
+                        <li><a href="./pages/en-us/careers.html">Careers</a></li>
+                        <li><a href="./pages/en-us/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Products</h3>
+                    <ul>
+                        <li><a href="#">Talent Marketplace</a></li>
+                        <li><a href="#">Managed Services</a></li>
+                        <li><a href="#">Upskilling</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="./pages/en-us/blog.html">Blog</a></li>
+                        <li><a href="#">Webinars</a></li>
+                        <li><a href="#">Case Studies</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="./pages/en-us/privacy.html">Terms of Service</a></li>
+                        <li><a href="./pages/en-us/privacy.html">Privacy Policy</a></li>
+                        <li><a href="./pages/en-us/sitemap.html">Sitemap</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2024 Carlano Computer Systems. All rights reserved.
+            </div>
+        </footer>
+        <script>
+            const SendRequest = () => {
+                window.location.href = "./contact.html"
+            }
+        </script>
+    
+        <script src="./js/app.js"></script>
+        <script src="./js/all.min.js"></script>
 </body>
 </html>
