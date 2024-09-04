@@ -295,11 +295,11 @@ footer {
 /* Contact Us code*/
 
 .contactUsImage {
-  scale: 50%;
+  scale: 15%;
   padding: 0px 0px;
-  margin-left: 35%;
-  margin-top: -63%;
-  margin-bottom: -200px;
+  margin-left: 16%;
+  margin-top: -211.7%;
+  margin-bottom: -165%;
 }
 
 .contactUsTitle {
@@ -314,6 +314,7 @@ footer {
   color: #246bfd;
   font-weight: bolder;
 }
+
 .contactUsTitle p {
   font-size: 10pt;
   font-weight: bolder;
@@ -352,15 +353,26 @@ footer {
 }
 
 .contactUsPrivacyPolicy {
-  padding: 40px 60px;
-  margin: 0px 40px;
+  padding: 40px 0px;
+  margin-left: 7.8%;
   margin-bottom: -70px;
+  color: grey;
 }
 
-.contactUsButton {
-  padding: 0px 60px;
-  padding-top: 40px;
-  margin: 0px 40px;
+.contactUsButton button {
+  padding: 10px 10px;
+  background: #246bfd ;
+  border-style: none;
+  margin-left: 7.8%;
+  margin-top: 5%;
+  border-radius: 5px;
+  width: 36.5%;
+  color: white;
+}
+
+#get-in-touch-button.dull {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 
 /*About Us Code*/
