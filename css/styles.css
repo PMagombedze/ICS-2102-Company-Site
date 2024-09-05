@@ -133,6 +133,27 @@ img {
   background-color: #f6f8fa;
 }
 
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.footer-section ul li svg {
+  margin-right: 8px;
+}
+
+.footer-section ul li a,
+.footer-section ul li span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
 .card-container {
   display: flex;
   justify-content: space-between;
