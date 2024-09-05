@@ -1,6 +1,6 @@
 # Carlano Computer Systems
 
-<img src="./images/Home.png" height=350 width=660>
+<img src="./images/readme.png" height=350 width=660>
 
 ### Hi everyone..👋..
 
