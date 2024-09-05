@@ -194,6 +194,10 @@ img {
   transition: background-color 0.3s ease;
 }
 
+.card p{
+  line-height: 1.5;
+}
+
 .card-button:hover {
   background-color: #0056b3;
 }
