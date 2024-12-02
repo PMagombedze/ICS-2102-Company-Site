@@ -356,116 +356,133 @@ footer {
   }
 }
 
-/* Contact Us code*/
+/* Contact Us code */
+  .contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
 
-.contactUsImage {
-  scale: 11.65%;
-  margin-left: 16%;
-  margin-top: -218.6%;
-  margin-bottom: -162%;
-  margin-right: -15%;
-}
+  .contact-form {
+    flex: 1;
+    margin-right: 2rem;
+  }
 
-.contactUsImage img {
-  object-fit: cover;
-  border-radius: 20px;
-}
+  .contactUsImage {
+    flex: 0 0 40%; /* Adjust this value to control the width */
+    max-width: 400px; /* Set a maximum width */
+    margin: 2rem 0;
+  }
 
-.contactUsTitle {
-  padding: 40px 40px;
-  padding-bottom: 60px;
-  margin: 50px 40px;
-  margin-top: 140px;
-  margin-bottom: -70px;
-}
+  .contactUsImage img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+  }
 
-.contactUsTitle h1 {
-  font-size: 18pt;
-  color: #246bfd;
-  font-weight: bolder;
-}
+  .contactUsTitle {
+    padding: 2rem;
+    margin: 2rem 0;
+  }
 
-.contactUsTitle p {
-  font-size: 10pt;
-  font-weight: bolder;
-  color: grey;
-}
+  .contactUsTitle h1 {
+    font-size: 1.5rem;
+    color: #246bfd;
+    font-weight: bolder;
+  }
 
-.userDetails {
-  margin: 0 auto;
-  padding-left: 7%;
-}
+  .contactUsTitle p {
+    font-size: 1rem;
+    font-weight: bolder;
+    color: grey;
+  }
 
-.userDetails table td {
-  font-size: 10pt;
-  font-weight: bolder;
-}
-.userDetails table {
-  border-spacing: 40px;
-  margin-left: -3.5%;
-}
+  .userDetails {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
 
-.userDetails tr:nth-child(2) td input {
-  width: 95.4%;
-}
 
-.userDetails tr:nth-child(3) td input {
-  width: 95.4%;
-}
+  .userDetails table {
+    width: 100%;
+    border-spacing: 2rem;
+  }
 
-.userDetails input {
-  width: 170px;
-  margin-top: 9px;
-  padding: 10px 10px;
-  border-radius: 10px;
-  flex: 1;
-  border: 1px solid #ccc;
-}
+  .userDetails table td {
+    font-size: 1rem;
+    font-weight: bolder;
+  }
 
-.leftSide {
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
-    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
-    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
-  margin-right: 131.8px;
-  margin-left: 100px;
-  background: #fff;
-  margin-bottom: -20px;
-  height: 612px;
-}
+  .userDetails input {
+    width: 100%;
+    margin-top: 0.5rem;
+    padding: 0.75rem;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+  }
 
-.contactUsPrivacyPolicy input {
-  margin-left: 9%;
-  margin-bottom: -5%;
-}
+  .leftSide {
+    box-shadow: 0 0.0625em 0.0625em rgba(0, 0, 0, 0.25),
+                0 0.125em 0.5em rgba(0, 0, 0, 0.25),
+                inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+    background: #fff;
+    margin: 1rem auto;
+    padding: 2rem;
+    max-width: 600px;
+  }
 
-.contactUsPrivacyPolicy label {
-  color: grey;
-}
+  .contactUsPrivacyPolicy {
+    margin: 1rem 0;
+  }
 
-.contactUsButton button {
-  padding: 10px 10px;
-  background: #246bfd;
-  border-style: none;
-  margin-left: 7.4%;
-  margin-top: 3%;
-  border-radius: 5px;
-  width: 38.5%;
-  color: white;
-  margin-bottom: 50px;
-}
+  .contactUsPrivacyPolicy label {
+    color: grey;
+    margin-left: 0.5rem;
+  }
 
-.ripple {
-  position: relative;
-  overflow: hidden;
-}
+  .contactUsButton button {
+    padding: 0.75rem 1.5rem;
+    background: #246bfd;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    width: 100%;
+    max-width: 300px;
+    margin: 1rem 0;
+    cursor: pointer;
+  }
 
-.ripple:after {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
+  .ripple {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .ripple:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+  }
+
+  @media (max-width: 768px) {
+    .contact-container {
+      flex-direction: column-reverse;
+    }
+
+    .contact-form,
+    .contactUsImage {
+      width: 100%;
+      margin: 1rem 0;
+    }
+  }
   left: 0;
   pointer-events: none;
   background-image: radial-gradient(circle, #fff 10%, transparent 10.01%);
@@ -485,6 +502,18 @@ footer {
 #get-in-touch-button.dull {
   opacity: 0.5;
   cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .contactUsTitle,
+  .userDetails,
+  .leftSide {
+    padding: 1rem;
+  }
+  
+  .contactUsButton button {
+    width: 100%;
+  }
 }
 
 /*About Us Code*/
